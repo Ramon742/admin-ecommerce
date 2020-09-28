@@ -1,0 +1,17 @@
+.home-page {
+    flex-grow: 8;
+    margin-top: 25px;
+    margin-left: 300px;
+
+    .title {
+        font-weight: 700;
+        margin-bottom: 120px;
+    }
+
+    .button {
+        background-color: #F8F8F8;
+        padding: 15px 40px;
+        border-radius: 12px;
+        color: #000000;
+    }
+}

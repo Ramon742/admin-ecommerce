@@ -1,0 +1,33 @@
+.navbar {
+    flex-grow: 1;
+    min-width: 250px;
+    max-width: 250px;
+    padding-left: 65px;
+    padding-bottom: 50px;
+    background-color: #0D1B35;
+    height: 100%;
+    color: #ffffff;
+    position: fixed;
+
+    .title {
+        margin-top: 30px;
+        margin-bottom: 90px;
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    .nav-item {
+        margin: 15px 0;
+    }
+
+    .link {
+        color: #c7c7c7;
+        &:hover {
+            color: #ffffff;
+        }
+    }
+
+    .user-info {
+        margin-top: 20vh;
+    }
+}
