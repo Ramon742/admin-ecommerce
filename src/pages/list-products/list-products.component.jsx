@@ -1,6 +1,8 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 
+import { selectProductItems } from '../../redux/product/product-selectors';
+
 import './list-products.styles.scss';
 
 import Header from '../../components/header/header.component';
@@ -63,7 +65,7 @@ const ListProductsPage = ({ getProducts, products, deleteProduct, getByCategory 
 }
 
 const mapStateToProps = (state) => ({
-    products: state.products.products
+    products: selectProductItems(state)
   });
 
 export default connect(mapStateToProps, { getProducts, deleteProduct, getByCategory })(ListProductsPage);

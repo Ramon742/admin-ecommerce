@@ -4,6 +4,7 @@ import Header from '../../components/header/header.component';
 
 import { connect } from 'react-redux';
 import { getProduct, editProduct } from '../../redux/product/product-actions';
+import { selectProductItem } from '../../redux/product/product-selectors';
 
 import './edit-product.styles.scss';
 
@@ -158,8 +159,8 @@ const EditProduct = ({ match, getProduct ,product, editProduct }) => {
     )
 };
 
-const mapStateToProps = state => ({
-    product: state.products.product
+const mapStateToProps = (state) => ({
+    product: selectProductItem(state)
   });
 
 export default connect(mapStateToProps , { getProduct, editProduct })(EditProduct);

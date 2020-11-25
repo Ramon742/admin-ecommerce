@@ -30,7 +30,8 @@ const LoginPage = ({ login, isAuthenticated  }) => {
 
     return (
         <div className='login'>
-            <p className='title'>Olá, seja bem vindo</p>
+            <p className='title'>Olá, seja bem vindo!<p style={{fontSize: '18px', fontWeight: '400'}}>Página de login para administradores</p></p>
+            
 
             <form onSubmit={onSubmit}>
                 <div className='input'>

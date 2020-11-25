@@ -47,13 +47,15 @@ export const deleteProduct = (id) => async dispatch => {
 // Add post
 export const addProduct = formData => async dispatch => {
   try {
-    console.log(formData);
+    console.log('got here 1');
     const res = await api.post('/items', formData);
-
+    console.log(res);
+    console.log('got here 2');
     dispatch({
       type: ADD_PRODUCT,
       payload: res.data
     });
+    console.log('got here 3');
 
   } catch (err) {
     console.log(err);
